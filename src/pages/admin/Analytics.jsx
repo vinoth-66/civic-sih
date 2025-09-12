@@ -7,12 +7,12 @@ import {
   TrendChart, 
   StatusDistributionChart 
 } from '../../components/Charts';
-import { 
-  Download, 
-  Calendar, 
-  Filter,
-  TrendingUp,
-  TrendingDown
+import {
+    Download,
+    Calendar,
+    Filter,
+    TrendingUp,
+    TrendingDown
 } from 'lucide-react';
 import Loader from '../../components/Loader';
 import toast from 'react-hot-toast';
