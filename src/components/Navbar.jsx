@@ -1,4 +1,3 @@
-// Main navigation component with role-based navigation
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
@@ -10,7 +9,8 @@ import {
   BarChart3, 
   User, 
   LogOut,
-  MapPin 
+  MapPin,
+  Trophy // Add Trophy icon for leaderboard
 } from 'lucide-react';
 import toast from 'react-hot-toast';
 
@@ -29,12 +29,14 @@ const Navbar = () => {
   const citizenLinks = [
     { to: '/citizen/dashboard', label: 'My Reports', icon: FileText },
     { to: '/citizen/report', label: 'Report Issue', icon: MapPin },
-    { to: '/citizen/track', label: 'Track Status', icon: BarChart3 }
+    { to: '/citizen/track', label: 'Track Status', icon: BarChart3 },
+    { to: '/leaderboard', label: 'Leaderboard', icon: Trophy } // Add Leaderboard link
   ];
 
   const adminLinks = [
     { to: '/admin/dashboard', label: 'Dashboard', icon: Home },
-    { to: '/admin/analytics', label: 'Analytics', icon: BarChart3 }
+    { to: '/admin/analytics', label: 'Analytics', icon: BarChart3 },
+    { to: '/leaderboard', label: 'Leaderboard', icon: Trophy } // Add Leaderboard link
   ];
 
   const currentLinks = isAdmin ? adminLinks : citizenLinks;

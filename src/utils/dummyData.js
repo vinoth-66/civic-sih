@@ -1,6 +1,6 @@
-// Dummy data for the Civic Issue Reporting System
 import { ISSUE_STATUS, ISSUE_CATEGORIES } from './constants';
 
+// Existing dummy data (unchanged)
 export const dummyIssues = [
   {
     id: 1,
@@ -113,5 +113,100 @@ export const dummyAnalytics = {
     { month: 'Apr', reported: 41, resolved: 39 },
     { month: 'May', reported: 35, resolved: 42 },
     { month: 'Jun', reported: 39, resolved: 35 }
+  ]
+};
+
+// Updated dummy data with avatars and recent activity
+export const dummyLeaderboard = {
+  individualLeaderboard: [
+    {
+      id: 1,
+      name: 'Rahul Sharma',
+      city: 'Ranchi',
+      points: 120,
+      issuesReported: 12,
+      badges: ['Top Reporter', 'Community Star'],
+      avatar: 'https://ui-avatars.com/api/?name=Rahul+Sharma&background=3B82F6&color=fff'
+    },
+    {
+      id: 2,
+      name: 'Priya Patel',
+      city: 'Jamshedpur',
+      points: 80,
+      issuesReported: 8,
+      badges: ['Rising Star'],
+      avatar: 'https://ui-avatars.com/api/?name=Priya+Patel&background=22C55E&color=fff'
+    },
+    {
+      id: 3,
+      name: 'Amit Kumar',
+      city: 'Dhanbad',
+      points: 60,
+      issuesReported: 6,
+      badges: [],
+      avatar: 'https://ui-avatars.com/api/?name=Amit+Kumar&background=FBBF24&color=fff'
+    },
+    {
+      id: 4,
+      name: 'Jhon Deo',
+      city: 'Bokaro',
+      points: 50,
+      issuesReported: 5,
+      badges: ['Eco Warrior'],
+      avatar: 'https://ui-avatars.com/api/?name=Jhon+Deo&background=EF4444&color=fff'
+    },
+    {
+      id: 5,
+      name: 'Vikram Singh',
+      city: 'Hazaribagh',
+      points: 40,
+      issuesReported: 4,
+      badges: [],
+      avatar: 'https://ui-avatars.com/api/?name=Vikram+Singh&background=8B5CF6&color=fff'
+    }
+  ],
+  communityLeaderboard: [
+    {
+      id: 1,
+      name: 'Ranchi Municipal Corporation',
+      city: 'Ranchi',
+      issuesReported: 450,
+      resolutionRate: 86
+    },
+    {
+      id: 2,
+      name: 'Jamshedpur Municipal Corporation',
+      city: 'Jamshedpur',
+      issuesReported: 390,
+      resolutionRate: 82
+    },
+    {
+      id: 3,
+      name: 'Dhanbad Municipal Corporation',
+      city: 'Dhanbad',
+      issuesReported: 320,
+      resolutionRate: 78
+    },
+    {
+      id: 4,
+      name: 'Bokaro Steel City',
+      city: 'Bokaro',
+      issuesReported: 280,
+      resolutionRate: 75
+    },
+    {
+      id: 5,
+      name: 'Hazaribagh Municipality',
+      city: 'Hazaribagh',
+      issuesReported: 250,
+      resolutionRate: 70
+    }
+  ],
+  recentActivity: [
+    'Rahul Sharma reported a pothole in Ranchi',
+    'Priya Patel submitted a streetlight issue in Jamshedpur',
+    'Amit Kumar reported a water leak in Dhanbad',
+    'Sneha Verma flagged garbage collection issues in Bokaro',
+    'Vikram Singh reported a traffic signal malfunction in Hazaribagh'
   ]
 };

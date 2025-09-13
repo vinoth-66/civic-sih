@@ -1,10 +1,10 @@
-// Main App component with React Router setup
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import { ToastContainer } from './components/Toast';
 import Navbar from './components/Navbar';
 import ProtectedRoute from './components/ProtectedRoute';
+import Leaderboard from './components/Leaderboard'; // Add Leaderboard import
 
 // Citizen Pages
 import Login from './pages/citizen/Login';
@@ -104,6 +104,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/admin/login" element={<AdminLogin />} />
+            <Route path="/leaderboard" element={<Leaderboard />} /> {/* Add Leaderboard Route */}
 
             {/* Citizen Protected Routes */}
             <Route
